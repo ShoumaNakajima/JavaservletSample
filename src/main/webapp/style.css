@@ -14,6 +14,7 @@ html, body {
 	height: 100%;
 	align-content: center;
 }
+
 .card-body {
 	padding: 0 1.25rem !important;
 }
@@ -65,15 +66,8 @@ input:focus {
 	background-color: white;
 }
 
-.links {
-	color: white;
-}
-
-.links a {
-	margin-left: 4px;
-}
 .card-footer, .card-header {
-    padding: 1.6rem 1.25rem !important;
+	padding: 1.6rem 1.25rem !important;
 }
 
 .js-fadein {
