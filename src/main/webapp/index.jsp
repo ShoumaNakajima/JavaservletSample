@@ -16,10 +16,11 @@
 	crossorigin="anonymous">
 <body>
 	<div class="container">
+		<h1 class="d-flex justify-content-center header">Aチャンネル</h1>
 		<div class="d-flex justify-content-center h-100">
 			<div class="card js-fadein is-show signin" id="signin">
 				<div class="card-header text-center">
-					<h3>Sign In</h3>
+					<h3>サインイン</h3>
 				</div>
 				<div class="card-body">
 					<form action="Login" method="post">
@@ -27,7 +28,7 @@
 							<div class="input-group-prepend">
 								<span class="input-group-text"><i class="fas fa-user"></i></span>
 							</div>
-							<input type="text" class="form-control" placeholder="username">
+							<input type="text" class="form-control" placeholder="username" name="username">
 
 						</div>
 						<div class="input-group form-group">
@@ -35,22 +36,22 @@
 								<span class="input-group-text"><i class="fas fa-key"></i></span>
 							</div>
 							<input type="password" class="form-control"
-								placeholder="password">
+								placeholder="password" name="password">
 						</div>
 						<div class="form-group">
-							<input type="submit" value="Login"
+							<input type="submit" value="ログイン"
 								class="btn float-right login_btn">
 						</div>
 					</form>
 				</div>
 				<div class="card-footer text-center">
 					<button type="button" class="btn btn-success"
-						onclick="ClickSignupButton()">Sign Up</button>
+						onclick="ClickSignupButton()">アカウント新規作成</button>
 				</div>
 			</div>
 			<div class="card js-fadein signup" id="signup">
 				<div class="card-header text-center">
-					<h3>Sign Up</h3>
+					<h3>アカウント新規作成</h3>
 				</div>
 				<div class="card-body">
 					<form action="Signup" method="post">
@@ -58,31 +59,31 @@
 							<div class="input-group-prepend">
 								<span class="input-group-text"><i class="fas fa-user"></i></span>
 							</div>
-							<input type="text" class="form-control" placeholder="username">
+							<input type="text" class="form-control" placeholder="username" name="username">
 
 						</div>
 						<div class="input-group form-group">
 							<div class="input-group-prepend">
 								<span class="input-group-text"><i class="fas fa-envelope"></i></span>
 							</div>
-							<input type="email" class="form-control" placeholder="eamil">
+							<input type="email" class="form-control" placeholder="eamil" name="email">
 						</div>
 						<div class="input-group form-group">
 							<div class="input-group-prepend">
 								<span class="input-group-text"><i class="fas fa-key"></i></span>
 							</div>
 							<input type="password" class="form-control"
-								placeholder="password">
+								placeholder="password" name="password">
 						</div>
 						<div class="form-group">
-							<input type="submit" value="Login"
-								class="btn float-right login_btn">
+							<input type="submit" value="登録"
+								class="btn float-right createaccount_btn">
 						</div>
 					</form>
 				</div>
 				<div class="card-footer text-center">
 					<button type="button" class="btn btn-success"
-						onclick="ClickSigninButton()">Sign In</button>
+						onclick="ClickSigninButton()">サインイン</button>
 				</div>
 			</div>
 		</div>

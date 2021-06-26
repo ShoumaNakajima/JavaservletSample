@@ -1,29 +1,23 @@
 package servlet;
 
 import java.io.IOException;
-
-import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
-
-import model.AccountInfo;
-import model.LoginLogic;
 
 /**
- * Servlet implementation class Signup
+ * Servlet implementation class DeleteAccount
  */
-@WebServlet("/Signup")
-public class Signup extends HttpServlet {
+@WebServlet("/DeleteAccount")
+public class DeleteAccount extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public Signup() {
+    public DeleteAccount() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -40,26 +34,8 @@ public class Signup extends HttpServlet {
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		request.setCharacterEncoding("UTF-8");
-		String username = request.getParameter("username");
-		String password = request.getParameter("password");
-		String email = request.getParameter("email");
-		
-		AccountInfo account = new AccountInfo(username, email, password);
-		
-		LoginLogic loginLogic = new LoginLogic();
-		boolean isAddUser = loginLogic.addUser(account);
-		
-		if(isAddUser) {
-			HttpSession session = request.getSession();
-			session.setAttribute("addUser", account);
-		
-			RequestDispatcher dispatcher = request.getRequestDispatcher("/WEB-INF/jsp/main.jsp");
-			dispatcher.forward(request, response);
-		}
-		else {
-			response.sendRedirect("/A_channel");
-		}
+		// TODO Auto-generated method stub
+		doGet(request, response);
 	}
 
 }

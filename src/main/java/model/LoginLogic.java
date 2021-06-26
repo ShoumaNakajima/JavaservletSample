@@ -11,20 +11,12 @@ public class LoginLogic {
 	private String user = "test";
 	private String password = "test";
 
-
 	public boolean checkUser(AccountInfo account) {
-		if (account.getName() == null || account.getName().length() == 0 || account.getPass() == null
-				|| account.getPass().length() == 0) {
-			return false;
-		}
-
-		try(Connection conn = DriverManager.getConnection(url, user, password)){
-			
-			String sql = "SELECT * FROM account WHERE username = ? && password = ?";
+		try {
+			Connection conn = DriverManager.getConnection(url, user, password);
+			String sql = "SELECT * FROM ACCOUNT WHERE USERNAME = '" + account.getName() + "' and PASSWORD = '"
+					+ account.getPass() + "'";
 			PreparedStatement pstmt = conn.prepareStatement(sql);
-
-			pstmt.setString(1, account.getName());
-			pstmt.setString(2, account.getPass());
 			ResultSet rs = pstmt.executeQuery();
 
 			if (rs.next()) {
@@ -38,8 +30,22 @@ public class LoginLogic {
 	}
 
 	public boolean addUser(AccountInfo account) {
-		boolean st = false;
+		boolean rs = false; 
+		
+		try {
+			Connection conn = DriverManager.getConnection(url, user, password);
+			String sql = "INSERT INTO ACCOUNT (USERNAME, EMAIL, PASSWORD) VALUES ('" + account.getName() + "', '"
+					+ account.getEmail() + "', '" + account.getPass() + "');";
+			PreparedStatement pstmt = conn.prepareStatement(sql);
+			pstmt.executeUpdate();
+			conn.commit();
 
-		return st;
+		} catch (SQLException e) {
+			return false;
+		} finally {
+			rs = true;
+		}
+		
+		return rs;
 	}
 }
