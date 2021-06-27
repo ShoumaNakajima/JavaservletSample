@@ -14,7 +14,7 @@
 	href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
 	integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
 	crossorigin="anonymous">
-<body>
+<body id="index">
 	<div class="container">
 		<h1 class="d-flex justify-content-center header">Aチャンネル</h1>
 		<div class="d-flex justify-content-center h-100">

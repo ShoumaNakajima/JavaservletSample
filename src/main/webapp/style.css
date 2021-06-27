@@ -1,7 +1,7 @@
 /* Made with love by Mutiullah Samim*/
 @import url('https://fonts.googleapis.com/css?family=Numans');
 
-html, body {
+#index {
 	background-image:
 		url('http://getwallpapers.com/wallpaper/full/a/5/d/544750.jpg');
 	background-size: cover;
@@ -14,14 +14,16 @@ html, body {
 	height: 100%;
 	align-content: center;
 }
+
 .header {
 	padding: 8rem 0 0 0;
 	color: white;
 }
 
 .h-100 {
-	padding-top: 6rem;	
+	padding-top: 6rem;
 }
+
 .card-body {
 	padding: 0 1.25rem !important;
 }
@@ -31,7 +33,6 @@ html, body {
 	width: 400px;
 	background-color: rgba(0, 0, 0, 0.5) !important;
 }
-
 
 .card-header h3 {
 	color: white;
@@ -59,7 +60,6 @@ input:focus {
 	width: 100px;
 }
 
-
 .login_btn:hover, .createaccount:hover {
 	color: black;
 	background-color: white;
@@ -82,4 +82,68 @@ input:focus {
 	opacity: 1;
 	visibility: visible;
 	transform: translateY(0px);
+}
+
+/***
+main.jsp
+***/
+#home {
+	background-color: white !important;
+}
+
+.header_home ul {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-align-items: center;
+	align-items: center;
+	width: 100%;
+	list-style: none;
+}
+
+li {
+	padding: 20px 60px;
+}
+
+ul.header_home li {
+	margin: 0;
+	padding: 10px important;
+	display: list-item;
+	text-align: -webkit-match-parent;
+}
+
+
+
+.container-fluid {
+	display: flex;
+	height: 100vh;
+	padding-right:0px !important;
+	padding-left:0px !important;
+}
+
+.home_container .center_contents, .home_container .right_contents {
+	max-height: 100vh;
+}
+
+.left_contents {
+	overflow: hidden;
+	flex: 1;
+	background: black;
+}
+
+.center_contents {
+	overflow: hidden;
+	flex: 2;
+	background: #e4455f;
+}
+
+.center_contents:hover {
+	overflow: auto;
+}
+
+.right_contents {
+  overflow: auto;
+  flex: 3;
+  background: #5f9cda;
 }
