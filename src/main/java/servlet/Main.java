@@ -38,7 +38,7 @@ public class Main extends HttpServlet {
 			response.sendRedirect("/A_channel");
 		}
 		else {
-			RequestDispatcher dispatcher = request.getRequestDispatcher("/WRB-INF/jsp/main.jsp");
+			RequestDispatcher dispatcher = request.getRequestDispatcher("/WEB-INF/jsp/main.jsp");
 			dispatcher.forward(request, response);
 		}
 	}

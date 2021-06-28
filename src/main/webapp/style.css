@@ -54,10 +54,14 @@ input:focus {
 	box-shadow: 0 0 0 0 !important;
 }
 
-.login_btn, .createaccount_btn {
+.login_btn, .createaccount_btn, .delete_btn {
 	color: black;
 	background-color: #FFC312;
 	width: 100px;
+}
+
+.delete_btn {
+	width: 200px !important;
 }
 
 .login_btn:hover, .createaccount:hover {
@@ -113,13 +117,11 @@ ul.header_home li {
 	text-align: -webkit-match-parent;
 }
 
-
-
 .container-fluid {
 	display: flex;
 	height: 100vh;
-	padding-right:0px !important;
-	padding-left:0px !important;
+	padding-right: 0px !important;
+	padding-left: 0px !important;
 }
 
 .home_container .center_contents, .home_container .right_contents {
@@ -129,7 +131,7 @@ ul.header_home li {
 .left_contents {
 	overflow: hidden;
 	flex: 1;
-	background: black;
+	overflow: hidden;
 }
 
 .center_contents {
@@ -143,7 +145,17 @@ ul.header_home li {
 }
 
 .right_contents {
-  overflow: auto;
-  flex: 3;
-  background: #5f9cda;
+	overflow: auto;
+	flex: 3;
+	background: #5f9cda;
+}
+
+.right_contents {
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.right_contents::-webkit-scrollbar { /* Chrome, Safari 対応 */
+    display: none;
 }

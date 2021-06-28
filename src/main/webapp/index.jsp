@@ -28,15 +28,22 @@
 							<div class="input-group-prepend">
 								<span class="input-group-text"><i class="fas fa-user"></i></span>
 							</div>
-							<input type="text" class="form-control" placeholder="username" name="username">
-
+							<input type="text" class="form-control" placeholder="username"
+								name="username" required>
+						</div>
+						<div class="input-group form-group">
+							<div class="input-group-prepend">
+								<span class="input-group-text"><i class="fas fa-envelope"></i></span>
+							</div>
+							<input type="email" class="form-control" placeholder="eamil"
+								name="email" required>
 						</div>
 						<div class="input-group form-group">
 							<div class="input-group-prepend">
 								<span class="input-group-text"><i class="fas fa-key"></i></span>
 							</div>
-							<input type="password" class="form-control"
-								placeholder="password" name="password">
+							<input minlength="8" type="password" class="form-control"
+								placeholder="password" name="password" required>
 						</div>
 						<div class="form-group">
 							<input type="submit" value="ログイン"
@@ -59,21 +66,23 @@
 							<div class="input-group-prepend">
 								<span class="input-group-text"><i class="fas fa-user"></i></span>
 							</div>
-							<input type="text" class="form-control" placeholder="username" name="username">
+							<input type="text" class="form-control" placeholder="username"
+								name="username" required>
 
 						</div>
 						<div class="input-group form-group">
 							<div class="input-group-prepend">
 								<span class="input-group-text"><i class="fas fa-envelope"></i></span>
 							</div>
-							<input type="email" class="form-control" placeholder="eamil" name="email">
+							<input type="email" class="form-control" placeholder="eamil"
+								name="email" required>
 						</div>
 						<div class="input-group form-group">
 							<div class="input-group-prepend">
 								<span class="input-group-text"><i class="fas fa-key"></i></span>
 							</div>
-							<input type="password" class="form-control"
-								placeholder="password" name="password">
+							<input minlength="8" type="password" class="form-control"
+								placeholder="password" name="password" required>
 						</div>
 						<div class="form-group">
 							<input type="submit" value="登録"

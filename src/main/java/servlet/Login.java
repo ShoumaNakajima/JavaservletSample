@@ -54,9 +54,10 @@ public class Login extends HttpServlet {
 			throws ServletException, IOException {
 		request.setCharacterEncoding("UTF-8");
 		String username = request.getParameter("username");
+		String email = request.getParameter("email");
 		String password = request.getParameter("password");
 
-		AccountInfo account = new AccountInfo(username, password);
+		AccountInfo account = new AccountInfo(username, email, password);
 
 		LoginLogic loginLogic = new LoginLogic();
 		boolean isLogin = loginLogic.checkUser(account);
