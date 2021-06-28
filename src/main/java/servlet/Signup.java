@@ -45,6 +45,11 @@ public class Signup extends HttpServlet {
 		String password = request.getParameter("password");
 		String email = request.getParameter("email");
 		
+		if(password.length() < 8) {
+			RequestDispatcher dispatcher = request.getRequestDispatcher("index.jsp");
+			dispatcher.forward(request, response);
+		}
+		
 		AccountInfo account = new AccountInfo(username, email, password);
 		
 		LoginLogic loginLogic = new LoginLogic();

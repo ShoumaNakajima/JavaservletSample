@@ -16,7 +16,13 @@
 	crossorigin="anonymous">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Potta+One&display=swap" rel="stylesheet">
+<link
+	href="https://fonts.googleapis.com/css2?family=Potta+One&display=swap"
+	rel="stylesheet">
+
+
+
+</script>
 <body id="index">
 	<div class="container">
 		<h1 class="d-flex justify-content-center header">Aチャンネル</h1>
@@ -26,7 +32,7 @@
 					<h3>サインイン</h3>
 				</div>
 				<div class="card-body">
-					<form action="Login" method="post">
+					<form action="Login" method="post" onSubmit="return check()">
 						<div class="input-group form-group">
 							<div class="input-group-prepend">
 								<span class="input-group-text"><i class="fas fa-user"></i></span>
@@ -46,11 +52,11 @@
 								<span class="input-group-text"><i class="fas fa-key"></i></span>
 							</div>
 							<input type="password" class="form-control"
-								placeholder="password" name="password" required>
+								placeholder="password" name="password" id="signin_password" required>
 						</div>
 						<div class="form-group">
 							<input type="submit" value="ログイン"
-								class="btn float-right login_btn">
+								class="btn float-right login_btn" onclick="PasswordCheck_1()">
 						</div>
 					</form>
 				</div>
@@ -64,7 +70,7 @@
 					<h3>アカウント新規作成</h3>
 				</div>
 				<div class="card-body">
-					<form action="Signup" method="post">
+					<form action="Signup" method="post" onSubmit="return check()">
 						<div class="input-group form-group">
 							<div class="input-group-prepend">
 								<span class="input-group-text"><i class="fas fa-user"></i></span>
@@ -85,11 +91,11 @@
 								<span class="input-group-text"><i class="fas fa-key"></i></span>
 							</div>
 							<input type="password" class="form-control"
-								placeholder="password" name="password" required>
+								placeholder="password" name="password" id="signup_password" required>
 						</div>
 						<div class="form-group">
 							<input type="submit" value="登録"
-								class="btn float-right createaccount_btn">
+								class="btn float-right createaccount_btn" onclick="PasswordCheck_2()">
 						</div>
 					</form>
 				</div>
@@ -100,7 +106,10 @@
 			</div>
 		</div>
 	</div>
-	<script type="text/javascript" src="style.js"></script>
+
+	<script type="text/javascript" src="style.js">
+		
+	</script>
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
 		integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
 		crossorigin="anonymous"></script>
