@@ -113,7 +113,7 @@ main.jsp
 	margin:0;
 }
 
-/*�^�C�g������*/
+
 .site_title{text-align: center;}
 .site_title a{
 	padding: 1rem 0 0 0;
@@ -185,9 +185,26 @@ ul.header_home li {
 }
 
 .left_contents {
-	overflow: hidden;
-	flex: 1;
-	background: black;
+	/*overflow: hidden;*/
+	/*flex: 1;*/
+	background: #e1eec1;
+}
+
+.left_contents ul{
+	margin-left: -5rem;
+	margin-right: -2rem;
+}
+
+.left_contents li{
+	font-size: 1rem;
+	list-style-type: none;
+	margin-bottom: -2rem;
+}
+
+.menubutton{
+	position: fixed;
+    bottom: 0;
+    margin-bottom: 1rem
 }
 
 .center_contents {
@@ -203,5 +220,5 @@ ul.header_home li {
 .right_contents {
   overflow: auto;
   flex: 3;
-  background: #5f9cda;
+  background: #e1eec1;
 }
