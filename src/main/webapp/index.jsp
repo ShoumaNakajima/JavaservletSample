@@ -52,11 +52,11 @@
 								<span class="input-group-text"><i class="fas fa-key"></i></span>
 							</div>
 							<input type="password" class="form-control"
-								placeholder="password" name="password" id="signin_password" required>
+								placeholder="password" name="password" id="signin_password" minlength="8" required>
 						</div>
 						<div class="form-group">
 							<input type="submit" value="ログイン"
-								class="btn float-right login_btn" onclick="PasswordCheck_1()">
+								class="btn float-right login_btn" onclick="PasswordCheck_1()">s
 						</div>
 					</form>
 				</div>
@@ -91,7 +91,7 @@
 								<span class="input-group-text"><i class="fas fa-key"></i></span>
 							</div>
 							<input type="password" class="form-control"
-								placeholder="password" name="password" id="signup_password" required>
+								placeholder="password" name="password" id="signup_password" minlength="8" required>
 						</div>
 						<div class="form-group">
 							<input type="submit" value="登録"
