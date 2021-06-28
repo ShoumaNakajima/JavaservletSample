@@ -9,12 +9,6 @@ public class AccountInfo {
 		
 	}
 	
-	public AccountInfo(String username, String password) {
-		this.username = username;
-//		this.email = null;
-		this.password = password;
-	}
-	
 	public AccountInfo(String username, String email, String password) {
 		this.username = username;
 		this.email = email;

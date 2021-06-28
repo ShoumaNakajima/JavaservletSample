@@ -15,24 +15,73 @@
 	integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
 	crossorigin="anonymous">
 <body id="home">
-	<div class="header_home">
-		<ul>
-			<li><a href="/A_channel/Login"><i class="fas fa-home fa-2x"></i></a></li>
-			<li><a><i class="fas fa-newspaper fa-2x"></i></a></li>
-			<li><a><i class="fas fa-users fa-2x"></i></a></li>
-			<li><a><i class="fas fa-gamepad fa-2x"></i></a></li>
-		</ul>
+	<div class="container-fluied">
+		<div class="header_home">
+			<ul>
+				<li><a href="/A_channel/Login"><i class="fas fa-home fa-2x"></i></a></li>
+				<li><a><i class="fas fa-newspaper fa-2x"></i></a></li>
+				<li><a><i class="fas fa-users fa-2x"></i></a></li>
+				<li><a><i class="fas fa-gamepad fa-2x"></i></a></li>
+			</ul>
+		</div>
 	</div>
 
 	<div class="container-fluid home_container">
 		<div class="left_contents col">
-			<p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+			<a class="btn btn-lg" href="/A_channel/Logout" role="button">ログアウト</a>
+
+			<button type="button" class="btn btn-danger" data-toggle="modal"
+				data-target="#exampleModal">アカウントを削除する</button>
 		</div>
 		<div class="center_contents col-8">
 			<p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
 		</div>
-		<div class="right_contents col">
-			<p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+		<div class="right_contents col"></div>
+	</div>
+
+	<!-- Modal -->
+	<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+		aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">アカウントを削除する</h5>
+					<button type="button" class="close" data-dismiss="modal"
+						aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<form action="DeleteAccount" method="post">
+						<div class="input-group form-group">
+							<div class="input-group-prepend">
+								<span class="input-group-text"><i class="fas fa-user"></i></span>
+							</div>
+							<input type="text" class="form-control" placeholder="username"
+								name="username">
+
+						</div>
+						<div class="input-group form-group">
+							<div class="input-group-prepend">
+								<span class="input-group-text"><i class="fas fa-envelope"></i></span>
+							</div>
+							<input type="email" class="form-control" placeholder="eamil"
+								name="email">
+						</div>
+						<div class="input-group form-group">
+							<div class="input-group-prepend">
+								<span class="input-group-text"><i class="fas fa-key"></i></span>
+							</div>
+							<input type="password" class="form-control"
+								placeholder="password" name="password">
+						</div>
+						<div class="form-group">
+							<input type="submit" value="アカウントを削除する"
+								class="btn float-right delete_btn">
+						</div>
+					</form>
+				</div>
+			</div>
 		</div>
 	</div>
 

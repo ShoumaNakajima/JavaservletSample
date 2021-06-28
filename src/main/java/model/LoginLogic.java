@@ -14,7 +14,9 @@ public class LoginLogic {
 	public boolean checkUser(AccountInfo account) {
 		try {
 			Connection conn = DriverManager.getConnection(url, user, password);
-			String sql = "SELECT * FROM ACCOUNT WHERE USERNAME = '" + account.getName() + "' and PASSWORD = '"
+			String sql = "SELECT * FROM ACCOUNT WHERE USERNAME = '" + account.getName() + "' and EMAIL = '"
+					+ account.getEmail()
+					+ "' and PASSWORD = '"
 					+ account.getPass() + "'";
 			PreparedStatement pstmt = conn.prepareStatement(sql);
 			ResultSet rs = pstmt.executeQuery();
@@ -30,8 +32,8 @@ public class LoginLogic {
 	}
 
 	public boolean addUser(AccountInfo account) {
-		boolean rs = false; 
-		
+		boolean rs = false;
+
 		try {
 			Connection conn = DriverManager.getConnection(url, user, password);
 			String sql = "INSERT INTO ACCOUNT (USERNAME, EMAIL, PASSWORD) VALUES ('" + account.getName() + "', '"
@@ -45,7 +47,7 @@ public class LoginLogic {
 		} finally {
 			rs = true;
 		}
-		
+
 		return rs;
 	}
 }
