@@ -141,7 +141,24 @@ main.jsp
 	background-size: cover;
 }
 
+.fas{
+	text-decoration:none;
+	border:none;
+	color: black;
+}
 
+.fas:hover{
+	color: #1f8e83;
+	text-shadow    : 
+       2px  2px 1px white,
+      -2px  2px 1px white,
+       2px -2px 1px white,
+      -2px -2px 1px white,
+       2px  0px 1px white,
+       0px  2px 1px white,
+      -2px  0px 1px white,
+       0px -2px 1px white; 
+}
 
 li {
 	padding: 20px 60px;
