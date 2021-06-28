@@ -14,6 +14,9 @@
 	href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
 	integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
 	crossorigin="anonymous">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Potta+One&display=swap" rel="stylesheet">
 <body id="index">
 	<div class="container">
 		<h1 class="d-flex justify-content-center header">Aチャンネル</h1>
@@ -35,7 +38,7 @@
 							<div class="input-group-prepend">
 								<span class="input-group-text"><i class="fas fa-envelope"></i></span>
 							</div>
-							<input type="email" class="form-control" placeholder="eamil"
+							<input type="email" class="form-control" placeholder="email"
 								name="email" required>
 						</div>
 						<div class="input-group form-group">
