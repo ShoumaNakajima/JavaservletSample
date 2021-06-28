@@ -25,7 +25,7 @@
 </script>
 <body id="index">
 	<div class="container">
-		<h1 class="d-flex justify-content-center header">Aチャンネル</h1>
+		<h1 class="d-flex justify-content-center header">Aちゃんねる</h1>
 		<div class="d-flex justify-content-center h-100">
 			<div class="card js-fadein is-show signin" id="signin">
 				<div class="card-header text-center">

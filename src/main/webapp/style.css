@@ -19,6 +19,15 @@
 	color: white;
 	font-size: 6rem;
 	font-family: 'Potta One', cursive;
+	text-shadow    : 
+       2px  2px 1px #1f8e83,
+      -2px  2px 1px #1f8e83,
+       2px -2px 1px #1f8e83,
+      -2px -2px 1px #1f8e83,
+       2px  0px 1px #1f8e83,
+       0px  2px 1px #1f8e83,
+      -2px  0px 1px #1f8e83,
+       0px -2px 1px #1f8e83; 
 }
 
 .h-100 {
@@ -102,6 +111,36 @@ main.jsp
 	width: 100%;
 	list-style: none;
 }
+
+/*ƒ^ƒCƒgƒ‹•”•ª*/
+.site_title{text-align: center;}
+.site_title a{
+	padding: 1rem 0 0 0;
+	color: white;
+	font-size: 4rem;
+	font-family: 'Potta One', cursive;
+	text-shadow    : 
+       2px  2px 1px #1f8e83,
+      -2px  2px 1px #1f8e83,
+       2px -2px 1px #1f8e83,
+      -2px -2px 1px #1f8e83,
+       2px  0px 1px #1f8e83,
+       0px  2px 1px #1f8e83,
+      -2px  0px 1px #1f8e83,
+       0px -2px 1px #1f8e83; 
+}
+
+.site_title a:hover {
+	text-decoration:none; border:none;
+	color: white;
+}
+
+.page-header{
+	background-image: url(/A_channel/image/Fotolia_84307575.jpg);
+	background-size: cover;
+}
+
+
 
 li {
 	padding: 20px 60px;
