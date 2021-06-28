@@ -56,11 +56,9 @@ public class LoginLogic {
 
 		try {
 			Connection conn = DriverManager.getConnection(url, user, password);
-//			String sql = "DELETE FROM account WHERE USERNAME=" + account.getName() + " AND EMAIL="
-//					+ account.getEmail() + " AND PASSWORD=" + account.getPass() + ";";
+			String sql = "DELETE FROM account WHERE USERNAME='" + account.getName() + "' AND EMAIL='"
+					+ account.getEmail() + "' AND PASSWORD='" + account.getPass() + "';";
 			
-			String sql = "DELETE FROM account WHERE USERNAME='" + "test" + "' AND EMAIL='"
-					+ "test@test.com" + "' AND PASSWORD='" + "testtest" + "';";
 			PreparedStatement pstmt = conn.prepareStatement(sql);
 			pstmt.executeUpdate();
 			conn.commit();
