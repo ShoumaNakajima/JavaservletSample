@@ -110,9 +110,10 @@ main.jsp
 	align-items: center;
 	width: 100%;
 	list-style: none;
+	margin:0;
 }
 
-/*ƒ^ƒCƒgƒ‹•”•ª*/
+/*ï¿½^ï¿½Cï¿½gï¿½ï¿½ï¿½ï¿½ï¿½ï¿½*/
 .site_title{text-align: center;}
 .site_title a{
 	padding: 1rem 0 0 0;
