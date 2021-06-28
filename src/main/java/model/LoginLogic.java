@@ -50,4 +50,27 @@ public class LoginLogic {
 
 		return rs;
 	}
+	
+	public boolean deleteUser(AccountInfo account) {
+		boolean rs = false;
+
+		try {
+			Connection conn = DriverManager.getConnection(url, user, password);
+//			String sql = "DELETE FROM account WHERE USERNAME=" + account.getName() + " AND EMAIL="
+//					+ account.getEmail() + " AND PASSWORD=" + account.getPass() + ";";
+			
+			String sql = "DELETE FROM account WHERE USERNAME='" + "test" + "' AND EMAIL='"
+					+ "test@test.com" + "' AND PASSWORD='" + "testtest" + "';";
+			PreparedStatement pstmt = conn.prepareStatement(sql);
+			pstmt.executeUpdate();
+			conn.commit();
+
+		} catch (SQLException e) {
+			return false;
+		} finally {
+			rs = true;
+		}
+
+		return rs;
+	}
 }

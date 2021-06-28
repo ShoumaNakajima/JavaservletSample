@@ -42,7 +42,7 @@
 							<div class="input-group-prepend">
 								<span class="input-group-text"><i class="fas fa-key"></i></span>
 							</div>
-							<input minlength="8" type="password" class="form-control"
+							<input type="password" class="form-control"
 								placeholder="password" name="password" required>
 						</div>
 						<div class="form-group">
@@ -81,7 +81,7 @@
 							<div class="input-group-prepend">
 								<span class="input-group-text"><i class="fas fa-key"></i></span>
 							</div>
-							<input minlength="8" type="password" class="form-control"
+							<input type="password" class="form-control"
 								placeholder="password" name="password" required>
 						</div>
 						<div class="form-group">

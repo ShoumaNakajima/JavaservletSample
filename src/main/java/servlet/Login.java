@@ -56,6 +56,11 @@ public class Login extends HttpServlet {
 		String username = request.getParameter("username");
 		String email = request.getParameter("email");
 		String password = request.getParameter("password");
+		
+		if(password.length() < 8) {
+			RequestDispatcher dispatcher = request.getRequestDispatcher("index.jsp");
+			dispatcher.forward(request, response);
+		}
 
 		AccountInfo account = new AccountInfo(username, email, password);
 
