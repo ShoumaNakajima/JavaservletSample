@@ -14,18 +14,23 @@
 	href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
 	integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
 	crossorigin="anonymous">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Potta+One&display=swap" rel="stylesheet">
 <body id="home">
-	<div class="container-fluied">
-		<div class="header_home">
-			<ul>
-				<li><a href="/A_channel/Login"><i class="fas fa-home fa-2x"></i></a></li>
-				<li><a><i class="fas fa-newspaper fa-2x"></i></a></li>
-				<li><a><i class="fas fa-users fa-2x"></i></a></li>
-				<li><a><i class="fas fa-gamepad fa-2x"></i></a></li>
-			</ul>
-		</div>
-	</div>
-
+	<header class="page-header">
+		<h1 class="site_title"><a href="/A_channel/Login">Aちゃんねる</a></h1>
+			<div class="container-fluied">
+				<div class="header_home">
+					<ul>
+						<li><a href="/A_channel/Login"><i class="fas fa-home fa-2x"></i></a></li>
+						<li><a><i class="fas fa-newspaper fa-2x"></i></a></li>
+						<li><a><i class="fas fa-users fa-2x"></i></a></li>
+						<li><a><i class="fas fa-gamepad fa-2x"></i></a></li>
+					</ul>
+				</div>
+			</div>
+	</header>
 	<div class="container-fluid home_container">
 		<div class="left_contents col">
 			<a class="btn btn-lg" href="/A_channel/Logout" role="button">ログアウト</a>
