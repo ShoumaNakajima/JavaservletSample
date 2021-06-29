@@ -61,7 +61,7 @@ AccountInfo loginUser = (AccountInfo) session.getAttribute("loginUser");
 							src="https://mdbootstrap.com/img/Photos/Avatars/img%20(19).jpg"
 							alt="avatar" width="60" height="60" />
 						<div style="padding-left: 10px;">
-							<h6 class="fw-bold text-primary mb-1">admin</h6>
+							<h6 class="fw-bold text-primary mb-1"><%=loginUser.getName()%></h6>
 							<p class="text-muted small mb-0">Shared publicly - Jun 2021</p>
 						</div>
 					</div>
