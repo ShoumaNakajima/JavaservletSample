@@ -56,7 +56,7 @@
 						</div>
 						<div class="form-group">
 							<input type="submit" value="ログイン"
-								class="btn float-right login_btn" onclick="PasswordCheck_1()">s
+								class="btn float-right login_btn" onclick="PasswordCheck_1()">
 						</div>
 					</form>
 				</div>

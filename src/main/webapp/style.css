@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Numans');
 
 #index {
-	background-image:url(/A_channel/image/Fotolia_261908300.jpg);
+	background-image: url(/A_channel/image/Fotolia_261908300.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	height: 100%;
@@ -19,15 +19,9 @@
 	color: white;
 	font-size: 6rem;
 	font-family: 'Potta One', cursive;
-	text-shadow    : 
-       2px  2px 1px #1f8e83,
-      -2px  2px 1px #1f8e83,
-       2px -2px 1px #1f8e83,
-      -2px -2px 1px #1f8e83,
-       2px  0px 1px #1f8e83,
-       0px  2px 1px #1f8e83,
-      -2px  0px 1px #1f8e83,
-       0px -2px 1px #1f8e83; 
+	text-shadow: 2px 2px 1px #1f8e83, -2px 2px 1px #1f8e83, 2px -2px 1px
+		#1f8e83, -2px -2px 1px #1f8e83, 2px 0px 1px #1f8e83, 0px 2px 1px
+		#1f8e83, -2px 0px 1px #1f8e83, 0px -2px 1px #1f8e83;
 }
 
 .h-100 {
@@ -110,54 +104,45 @@ main.jsp
 	align-items: center;
 	width: 100%;
 	list-style: none;
-	margin:0;
+	margin: 0;
 }
 
+.site_title {
+	text-align: center;
+}
 
-.site_title{text-align: center;}
-.site_title a{
+.site_title a {
 	padding: 1rem 0 0 0;
 	color: white;
 	font-size: 4rem;
 	font-family: 'Potta One', cursive;
-	text-shadow    : 
-       2px  2px 1px #1f8e83,
-      -2px  2px 1px #1f8e83,
-       2px -2px 1px #1f8e83,
-      -2px -2px 1px #1f8e83,
-       2px  0px 1px #1f8e83,
-       0px  2px 1px #1f8e83,
-      -2px  0px 1px #1f8e83,
-       0px -2px 1px #1f8e83; 
+	text-shadow: 2px 2px 1px #1f8e83, -2px 2px 1px #1f8e83, 2px -2px 1px
+		#1f8e83, -2px -2px 1px #1f8e83, 2px 0px 1px #1f8e83, 0px 2px 1px
+		#1f8e83, -2px 0px 1px #1f8e83, 0px -2px 1px #1f8e83;
 }
 
 .site_title a:hover {
-	text-decoration:none; border:none;
+	text-decoration: none;
+	border: none;
 	color: white;
 }
 
-.page-header{
+.page-header {
 	background-image: url(/A_channel/image/Fotolia_84307575.jpg);
 	background-size: cover;
 }
 
-.fas{
-	text-decoration:none;
-	border:none;
+.fas {
+	text-decoration: none;
+	border: none;
 	color: black;
 }
 
-.fas:hover{
+.fas:hover {
 	color: #1f8e83;
-	text-shadow    : 
-       2px  2px 1px white,
-      -2px  2px 1px white,
-       2px -2px 1px white,
-      -2px -2px 1px white,
-       2px  0px 1px white,
-       0px  2px 1px white,
-      -2px  0px 1px white,
-       0px -2px 1px white; 
+	text-shadow: 2px 2px 1px white, -2px 2px 1px white, 2px -2px 1px white,
+		-2px -2px 1px white, 2px 0px 1px white, 0px 2px 1px white, -2px 0px
+		1px white, 0px -2px 1px white;
 }
 
 li {
@@ -171,13 +156,11 @@ ul.header_home li {
 	text-align: -webkit-match-parent;
 }
 
-
-
 .container-fluid {
 	display: flex;
 	height: 100vh;
-	padding-right:0px !important;
-	padding-left:0px !important;
+	padding-right: 0px !important;
+	padding-left: 0px !important;
 }
 
 .home_container .center_contents, .home_container .right_contents {
@@ -190,21 +173,21 @@ ul.header_home li {
 	background: #e1eec1;
 }
 
-.left_contents ul{
+.left_contents ul {
 	margin-left: -5rem;
 	margin-right: -2rem;
 }
 
-.left_contents li{
+.left_contents li {
 	font-size: 1rem;
 	list-style-type: none;
 	margin-bottom: -2rem;
 }
 
-.menubutton{
-	position: fixed;テキストテキストテ
-    bottom: 0;
-    margin-bottom: 1rem
+.menubutton {
+	position: fixed;
+	bottom: 0;
+	margin-bottom: 1rem
 }
 
 .center_contents {
@@ -218,22 +201,33 @@ ul.header_home li {
 }
 
 .right_contents {
-  overflow: auto;
-  flex: 3;
-  background: #e1eec1;
+	overflow: auto;
+	flex: 3;
+	background: #e1eec1; overflow-y : scroll;
+	-ms-overflow-style: none; /* IE, Edge 対応 */
+	scrollbar-width: none;
+	overflow-y: scroll; /* Firefox 対応 */
 }
-.season_flower .month{
-	font-size: 	1.2rem;
+
+.right_contents::-webkit-scrollbar { /* Chrome, Safari 対応 */
+	display: none;
+}
+
+.right_contents::-webkit-scrollbar:hover { /* Chrome, Safari 対応 */
+	display: block;
+}
+
+.season_flower .month {
+	font-size: 1.2rem;
 	font-weight: bold;
 	padding: .8rem .2rem 0;
 }
 
-.season_flower .flower_name{
-	font-size: 	1rem;
+.season_flower .flower_name {
+	font-size: 1rem;
 	padding: .8rem 0;
 }
 
 .season_flower img {
 	padding-bottom: .5rem;
 }
-
