@@ -57,7 +57,7 @@ public class Signup extends HttpServlet {
 		
 		if(isAddUser) {
 			HttpSession session = request.getSession();
-			session.setAttribute("addUser", account);
+			session.setAttribute("loginUser", account);
 		
 			RequestDispatcher dispatcher = request.getRequestDispatcher("/WEB-INF/jsp/main.jsp");
 			dispatcher.forward(request, response);
