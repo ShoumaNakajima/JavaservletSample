@@ -7,7 +7,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 
 public class LoginLogic {
-	private String url = "jdbc:h2:tcp://localhost/~/test";
+	private String url = "jdbc:h2:tcp://localhost/~/testdb";
 	private String user = "test";
 	private String password = "test";
 
