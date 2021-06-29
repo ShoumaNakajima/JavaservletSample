@@ -54,7 +54,149 @@ AccountInfo loginUser = (AccountInfo) session.getAttribute("loginUser");
 			</div>
 		</div>
 		<div class="center_contents col-7">
-			<p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+			<div class="card">
+				<div class="card-body">
+					<div class="d-flex flex-start align-items-center">
+						<img class="rounded-circle shadow-1-strong me-3"
+							src="https://mdbootstrap.com/img/Photos/Avatars/img%20(19).jpg"
+							alt="avatar" width="60" height="60" />
+						<div style="padding-left: 10px;">
+							<h6 class="fw-bold text-primary mb-1">admin</h6>
+							<p class="text-muted small mb-0">Shared publicly - Jun 2021</p>
+						</div>
+					</div>
+					<div class="d-flex flex-start w-100">
+						<div class="form-outline w-100" style="padding-top: 10px;">
+							<textarea class="form-control" id="textAreaExample" rows="4"
+								style="background: #fff;"></textarea>
+						</div>
+					</div>
+					<div class="float-end mt-2 pt-1 text-right">
+						<button type="button" class="btn btn-primary btn-sm">
+							Post comment</button>
+						<button type="button" class="btn btn-outline-primary btn-sm">
+							Cancel</button>
+					</div>
+				</div>
+			</div>
+
+			<div class="card">
+				<div class="card-body">
+					<div class="d-flex flex-start align-items-center">
+						<img class="rounded-circle shadow-1-strong me-3"
+							src="https://mdbootstrap.com/img/Photos/Avatars/img%20(19).jpg"
+							alt="avatar" width="60" height="60" />
+						<div style="padding-left: 10px;">
+							<h6 class="fw-bold text-primary mb-1">admin</h6>
+							<p class="text-muted small mb-0">Shared publicly - Jun 2021</p>
+						</div>
+					</div>
+
+					<p class="mt-3 mb-4 pb-2">PowerPoint作成中</p>
+
+					<div class="small d-flex justify-content-start">
+						<a href="#!" class="d-flex align-items-center me-3"> <i
+							class="far fa-thumbs-up me-2"></i>
+							<p class="mb-0" style="padding: 0 1rem 0 .5rem;">Like</p>
+						</a> <a href="#!" class="d-flex align-items-center me-3"> <i
+							class="far fa-comment-dots me-2"></i>
+							<p class="mb-0" style="padding: 0 1rem 0 .5rem;">Comment</p>
+						</a> <a href="#!" class="d-flex align-items-center me-3"> <i
+							class="fas fa-share me-2"></i>
+							<p class="mb-0" style="padding: 0 1rem 0 .5rem;">Share</p>
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="card mb-3">
+				<img src="/A_channel/image/Fotolia_84307575.jpg" class="img-fluid"
+					alt="Responsive image">
+				<div class="card-body">
+					<div class="d-flex flex-start align-items-center">
+						<img class="rounded-circle shadow-1-strong me-3"
+							src="https://mdbootstrap.com/img/Photos/Avatars/img%20(19).jpg"
+							alt="avatar" width="60" height="60" />
+						<div style="padding-left: 10px;">
+							<h6 class="fw-bold text-primary mb-1">admin</h6>
+							<p class="text-muted small mb-0">Shared publicly - Jun 2021</p>
+						</div>
+					</div>
+					<h5 class="card-title">プロジェクト発表日</h5>
+					<p class="card-text">発表中に噛んだらどうしよう...お腹すいた</p>
+				</div>
+				<div class="card-footer py-3 border-0"
+					style="background-color: #f8f9fa;">
+					<div class="d-flex flex-start w-100">
+						<img class="rounded-circle shadow-1-strong me-3"
+							src="https://mdbootstrap.com/img/Photos/Avatars/img%20(19).jpg"
+							alt="avatar" width="40" height="40" />
+						<div class="form-outline w-100" style="margin-left: 20px;">
+							<textarea class="form-control" id="textAreaExample" rows="4"
+								style="background: #fff;"></textarea>
+							<label class="form-label" for="textAreaExample">Message</label>
+						</div>
+					</div>
+					<div class="float-end mt-2 pt-1 text-right">
+						<button type="button" class="btn btn-primary btn-sm">
+							Post comment</button>
+						<button type="button" class="btn btn-outline-primary btn-sm">
+							Cancel</button>
+					</div>
+				</div>
+			</div>
+
+			<div class="card mb-3">
+				<div class="card-body">
+					<div class="d-flex flex-start align-items-center">
+						<div style="padding-left: 10px;">
+							<h6 class="fw-bold text-primary mb-1">test</h6>
+							<p class="text-muted small mb-0">Shared publicly - Jun 2021</p>
+						</div>
+					</div>
+					<h5 class="card-title">終わる気がしない</h5>
+					<p class="card-text">
+						土日残業必須かなぁ...<br>はぁ(*´Д｀)
+					</p>
+				</div>
+			</div>
+			<div class="card mb-3">
+				<img src="/A_channel/image/Fotolia_82097469.jpg" class="img-fluid"
+					alt="Responsive image">
+				<div class="card-body">
+					<div class="d-flex flex-start align-items-center">
+						<img class="rounded-circle shadow-1-strong me-3"
+							src="https://mdbootstrap.com/img/Photos/Avatars/img%20(19).jpg"
+							alt="avatar" width="60" height="60" />
+						<div style="padding-left: 10px;">
+							<h6 class="fw-bold text-primary mb-1">admin</h6>
+							<p class="text-muted small mb-0">Shared publicly - Jun 2021</p>
+						</div>
+					</div>
+					<h5 class="card-title">何とかなるだろ！</h5>
+					<p class="card-text">皆で力を合わせれば出来ない課題なんてないさ！</p>
+				</div>
+			</div>
+			<div class="card mb-3">
+				<img src="/A_channel/image/Fotolia_261908300.jpg" class="img-fluid"
+					alt="Responsive image">
+				<div class="card-body">
+					<div class="d-flex flex-start align-items-center">
+						<img class="rounded-circle shadow-1-strong me-3"
+							src="https://mdbootstrap.com/img/Photos/Avatars/img%20(19).jpg"
+							alt="avatar" width="60" height="60" />
+						<div style="padding-left: 10px;">
+							<h6 class="fw-bold text-primary mb-1">admin</h6>
+							<p class="text-muted small mb-0">Shared publicly - Jun 2021</p>
+						</div>
+					</div>
+					<h5 class="card-title">明日から開発だぁ～！</h5>
+					<p class="card-text">
+						何で既にAちゃんねるがあるんですかね？<br>配点（自由な世界）
+					</p>
+				</div>
+			</div>
+
 		</div>
 		<div class="right_contents col">
 			<div class="season_flower text-center">

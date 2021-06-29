@@ -58,10 +58,14 @@ input:focus {
 	box-shadow: 0 0 0 0 !important;
 }
 
-.login_btn, .createaccount_btn {
+.login_btn, .createaccount_btn, .delete_btn {
 	color: black;
 	background-color: #FFC312;
 	width: 100px;
+}
+
+.delete_btn {
+	width: 200px;
 }
 
 .login_btn:hover, .createaccount:hover {
@@ -182,6 +186,7 @@ ul.header_home li {
 	font-size: 1rem;
 	list-style-type: none;
 	margin-bottom: -2rem;
+	padding: 20px 50px;
 }
 
 .menubutton {
@@ -193,17 +198,40 @@ ul.header_home li {
 .center_contents {
 	overflow: hidden;
 	flex: 2;
-	background: #e4455f;
+	overflow-y: scroll;
+	-ms-overflow-style: none; /* IE, Edge 対応 */
+	scrollbar-width: none; /* Firefox 対応 */
 }
 
 .center_contents:hover {
 	overflow: auto;
 }
 
+.center_contents::-webkit-scrollbar { /* Chrome, Safari 対応 */
+	display: none;
+}
+
+.card {
+	margin: 1.8rem 3rem;
+}
+
+.card-title {
+	padding: 1rem 0 0;
+}
+
+.card-body {
+	padding: 1rem !important;
+}
+
+.card-body .card-text:last-child {
+	padding: 0 0 1rem;
+}
+
 .right_contents {
 	overflow: auto;
 	flex: 3;
-	background: #e1eec1; overflow-y : scroll;
+	background: #e1eec1;
+	overflow-y: scroll;
 	-ms-overflow-style: none; /* IE, Edge 対応 */
 	scrollbar-width: none;
 	overflow-y: scroll; /* Firefox 対応 */
@@ -211,10 +239,6 @@ ul.header_home li {
 
 .right_contents::-webkit-scrollbar { /* Chrome, Safari 対応 */
 	display: none;
-}
-
-.right_contents::-webkit-scrollbar:hover { /* Chrome, Safari 対応 */
-	display: block;
 }
 
 .season_flower .month {
